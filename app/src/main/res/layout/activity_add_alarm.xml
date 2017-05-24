@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back_ground"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="Please Input \n term of contract"
+            android:id="@+id/textView3" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/row_background"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Start Day"
+                android:id="@+id/textView4"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="12-12-2015"
+                android:onClick="on_startday_text"
+                android:textColor="#ffffff"
+                android:id="@+id/startday_text"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            >
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/row_background" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="End Day"
+                android:textColor="#ffffff"
+                android:id="@+id/textView5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="02-02-2016"
+                android:onClick="on_endday_text"
+                android:textColor="#ffffff"
+                android:id="@+id/endday_text"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" >
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.09"
+            android:text="Next  >"
+            android:textColor="#ffffff"
+            android:id="@+id/on_payment_button"
+            android:onClick="onPaymentGo"
+            android:background="@drawable/button_background" />
+    </LinearLayout>
+
+
+</RelativeLayout>

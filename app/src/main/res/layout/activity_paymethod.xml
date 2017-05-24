@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"></RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Is this Pre Payment? \n or Deffered Payment?"
+            android:textColor="#ffffff"
+            android:id="@+id/textView6"
+            android:layout_above="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:entries="@array/payment_arrays"
+            android:prompt="@string/payment_prompt"
+            android:background="@drawable/spinner"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+            android:spinnerMode="dialog" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"></RelativeLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:text="Next >"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_background"
+            android:id="@+id/payment_btn"
+            android:onClick="onPayment" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"></RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

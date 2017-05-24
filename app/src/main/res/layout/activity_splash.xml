@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground" >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/building" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:gravity="center_horizontal"
+        android:text="Designed by Beloved \n in California"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:id="@+id/app_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rent Alarm"
+        android:id="@+id/app_titile"
+        android:layout_marginBottom="60dp"
+        android:layout_above="@+id/imgLogo"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

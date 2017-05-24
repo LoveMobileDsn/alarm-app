@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:text="Do you have any \n nickname for this rent?"
+        android:textColor="#ffffff"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="(Or, Just sample address if it)"
+        android:textColor="#ffffff"
+        android:id="@+id/textlabel_uphint"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="34dp"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nickname_input"
+        android:layout_centerVertical="true"
+        android:hint="Your nick name input"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:singleLine="true"
+        android:layout_alignRight="@+id/textlabel_uphint"
+        android:layout_alignEnd="@+id/textlabel_uphint"
+        android:layout_alignLeft="@+id/textlabel_uphint"
+        android:layout_alignStart="@+id/textlabel_uphint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ex :) Irvin Spectrum Condo"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:id="@+id/example_label"
+        android:layout_below="@+id/nickname_input"
+        android:layout_alignLeft="@+id/nickname_input"
+        android:layout_alignStart="@+id/nickname_input"
+        android:layout_marginTop="31dp"
+        android:layout_alignRight="@+id/nickname_input"
+        android:layout_alignEnd="@+id/nickname_input" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="Done"
+        android:textColor="#ffffff"
+        android:id="@+id/done_btn"
+        android:layout_below="@+id/example_label"
+        android:layout_alignLeft="@+id/example_label"
+        android:layout_alignStart="@+id/example_label"
+        android:layout_marginTop="66dp"
+        android:onClick="onDone"
+        android:layout_alignRight="@+id/example_label"
+        android:layout_alignEnd="@+id/example_label" />
+
+
+</RelativeLayout>

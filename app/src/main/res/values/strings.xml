@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RentAlarm</string>
+    <string name="payment_prompt">Choose a payment method</string>
+    <string-array name="payment_arrays">
+
+        <item>Pre-Payment</item>
+        <item>Deferred-Payment</item>
+
+    </string-array>
+</resources>
